@@ -1,3 +1,18 @@
+$(document).ready(function(){  
+
+// animation for progress line
+    $(".technology-progress > span").each(function() {
+            $(this)
+                    .data("origWidth", $(this).width())
+                    .width(0)
+                    .animate({
+                            width: $(this).data("origWidth")
+                    }, 2100);
+    });
+});
+
+
+
 $(function () {
 
     lightbox();
@@ -67,6 +82,9 @@ function map() {
          }*/
     });
 }
+
+
+
 
 // function utils() {
 
