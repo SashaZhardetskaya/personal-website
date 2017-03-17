@@ -46,7 +46,10 @@ section {
   height: 100%;
   left: 0;
   top: 0;
-  background: #000;
+/*  background: #000;
+*/  background-color: rgba(44, 62, 80, 0.3); 
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
   z-index: 2;
   opacity: 0.6;
   filter: alpha(opacity=60);
