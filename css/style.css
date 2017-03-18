@@ -144,7 +144,10 @@ span.typed-cursor {
   font-size: 50px;
 }
 
-
+/*.technology-row {
+  display: flex;
+  justify-content: flex-start;
+}*/
 .technology-progress {
   position: relative;
   background: #555;

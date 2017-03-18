@@ -2,18 +2,26 @@
 $(document).ready(function(){  
 
 // animation for progress line
+    $(".technology-progress > span").each(function() {
+        $(this)
+            .data("origWidth", $(this).width())
+            .width(0);
+    });
+
     $(".technology-progress").viewportChecker({
         callbackFunction: function(elem, action){
-        $(".technology-progress > span").each(function() {
-            $(this)
-                .data("origWidth", $(this).width())
-                .width(0)
+            var $spanToAnimate = $(elem).find('span');
+
+            $spanToAnimate
                 .animate({
-                        width: $(this).data("origWidth")
+                        width: $spanToAnimate.data("origWidth")
                 }, 2100);
-            });
         },
     });
+});
+
+$(document).ready(function(){
+    new WOW().init(); // инициализация wow.js
 });
 
 
