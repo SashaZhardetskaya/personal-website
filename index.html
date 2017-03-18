@@ -33,8 +33,11 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
               <p class="italic">Oh, hello, nice to meet you!</p>
-              <h1>I am B&W Landing page or portfolio Theme.</h1>
+              <div class="header-text btn">
+                <h1><span id="head-title"></span></h1>
+              </div>
               <p class="italic">I am a ready to be your portfolio, telling your stories and short presentations.</p>
+              
             </div>
           </div>
         </div>
@@ -141,36 +144,49 @@
             </div>
             <div class="row">
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-1.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/crafted.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information">
+                    <img src="img/crafted_small.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-2.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 2" data-footer="Some footer information"><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/portfolio-2.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 2" data-footer="Some footer information">
+                    <img src="img/portfolio-2.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-3.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 3" data-footer="Some footer information"><img src="img/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/dtrope.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 3" data-footer="Some footer information">
+                    <img src="img/dtrope-small.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-4.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 4" data-footer="Some footer information"><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/portfolio-4.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 4" data-footer="Some footer information">
+                    <img src="img/portfolio-4.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-5.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 5" data-footer="Some footer information"><img src="img/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/portfolio-5.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 5" data-footer="Some footer information">
+                    <img src="img/portfolio-5.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
               <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-6.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 6" data-footer="Some footer information"><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
+                <div class="box">
+                  <a href="img/portfolio-6.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 6" data-footer="Some footer information">
+                    <img src="img/portfolio-6.jpg" alt="" class="img-responsive">
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-7.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 7" data-footer="Some footer information"><img src="img/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
-              </div></a>
-              <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-8.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 8" data-footer="Some footer information"><img src="img/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
-              </div></a>
-              <div class="col-sm-4">
-                <div class="box"><a href="img/portfolio-9.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 9" data-footer="Some footer information"><img src="img/portfolio-9.jpg" alt="" class="img-responsive"></a></div>
-              </div></a>
             </div>
           </div>
         </div>
@@ -275,5 +291,16 @@
     <!-- main script-->
     <script src="js/front.js"></script>
     <script src="js/jquery.viewportchecker.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(function(){
+          $("#head-title").typed({
+            strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
+            typeSpeed: 100,
+            loop: true,
+            startDelay: 100
+          });
+      });
+    </script>
   </body>
 </html>
