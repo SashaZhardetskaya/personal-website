@@ -145,8 +145,6 @@ span.typed-cursor {
 }
 
 
-
-
 .technology-progress {
   position: relative;
   background: #555;
@@ -197,7 +195,21 @@ span.typed-cursor {
   overflow: hidden;
 }
 
-
+.portfolio-img-small {
+  opacity: 0.9;
+  -webkit-filter: grayscale(63%);
+/*  -webkit-filter: brightness(60%);
+*/  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+.portfolio-img-small:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+/*  -webkit-filter: brightness(100%);
+*/}
 
 #map {
   height: 600px;
